@@ -16,7 +16,7 @@ CLIENT_ID=my-own-client-id-without-quotes
 CLIENT_SECRET=my-own-secret-id-without-quotes
 ```
 
-### RUN
+### Run
 
 Then run the following command in your terminal :
 ``` sh
@@ -29,6 +29,8 @@ docker build -t delight . && docker run -it --env-file env.list --rm delight
 
 To get the program running on your own environment, first [install Elixir](https://elixir-lang.org/install.html#by-operating-system).
 
+Pass your id and secret from the Spotify API as temporary [ENV variables](https://www.autodesk.com/fr/support/technical/article/caas/sfdcarticles/sfdcarticles/FRA/How-to-set-an-environment-variable.html) under the names **CLIENT_ID** and **CLIENT_SECRET**
+
 Then run the following command :
 ``` shell
 mix deps.get
@@ -39,6 +41,8 @@ Compile with :
 ``` shell
 mix compile
 ```
+
+### Run 
 
 And start the resulting executable with :
 ``` shell
